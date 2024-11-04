@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1323;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  padding-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+}
+.jeremyBox {
+  height: 203px;
+  background-color: #1c204b;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.jeremyBoxAvatarContent {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  background-color: #5747ea;
+  height: 133px;
+  border-radius: 20px;
+}
+.jeremyBox img {
+  width: 64px;
+  border: 3px solid white;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.jeremyBoxAvatarContent > div > p:first-of-type {
+  color: #bbc0ff;
+  font-size: 15px;
+}
+
+.jeremyBoxAvatarContent > div > p:last-of-type {
+  color: white;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.jeremyBox > :last-child {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  color: #7078c9;
+
+}
+
+.jeremyBox > :last-child >p:hover{
+ cursor: pointer;
+
+}
+
+.box {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.bgImage{
+  width: 60px;
+  position: relative;
+  left: 250px;
+  top: 10px;
+}
+
+.childBox{
+  z-index: 2;
+  height: 78%;
+  width: 100%;
+  background-color: #1C204B;
+  border-radius: 20px;
+  padding: 30px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upperDiv{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.upperDiv > :first-child{
+  position: relative;
+  bottom: -5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lowerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.lowerDiv > :first-child{
+  font-size: 32px;
+  font-weight: 100;
+  position: relative;
+  bottom: -5px;
+}
+
+.lowerDiv > :last-child{
+  color: #bbc0ff;
+  font-size: 15px;
+}
+
+@media only screen and (min-width : 1224px){
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  main{
+    padding: 0;
+    height: 518px;
+    width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+  }
+
+  .jeremyBox{
+    height: 518px;
+    width: 255px;
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+
+  .jeremyBoxAvatarContent{
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+  }
+
+  .jeremyBoxAvatarContent > div > p:first-of-type {
+    margin-top: 30px;
+  }
+
+  .jeremyBoxAvatarContent > div > p:last-of-type{
+    margin-top: 5px;
+    width: 50%;
+    font-size: 40px;
+  }
+
+  .jeremyBox img {
+    width: 78px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  
+.jeremyBox > :last-child {
+  flex-direction: column;
+  align-items: start;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+section{
+
+  display: grid;
+  grid-column: 3;
+  width: 855px;
+  height: 518px;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.box{
+  margin: 0;
+  height: 100%;
+}
+
+
+.bgImage{
+  width: 90px;
+  left: 150px;
+  top: 20px;
+}
+
+.childBox{
+  min-height: 199px;
+}
+
+.childBox:hover{
+  cursor: pointer;
+  background-color: #33397A;
+}
+
+
+.lowerDiv {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 70%;
+}
+
+.lowerDiv > :first-child{
+  font-size: 56px;
+}
+.lowerDiv > :last-child{
+  font-size: 15px;
+  font-weight: 300;
+}
+  }
