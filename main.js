@@ -81,6 +81,7 @@ function createBox(backgroundColor, backgroundImage, title, timeframes, timeline
 
   const ellipsis = document.createElement("img");
   ellipsis.src = "./images/icon-ellipsis.svg";
+  ellipsis.alt = "ellipsis icon"
 
   upperDiv.appendChild(h2);
   upperDiv.appendChild(ellipsis);
