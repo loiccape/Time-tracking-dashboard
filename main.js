@@ -68,6 +68,7 @@ function createBox(backgroundColor, backgroundImage, title, timeframes, timeline
   const bgImage = document.createElement("img");
   bgImage.src = backgroundImage;
   bgImage.className = "bgImage";
+  bgImage.alt = "theme icon"
 
   const childDiv = document.createElement("div");
   childDiv.className = "childBox";

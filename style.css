@@ -232,3 +232,9 @@ section{
   font-weight: 300;
 }
   }
+
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
